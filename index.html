@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.I. FOR DESIGNERS — Liang Jing Ren</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f0ea;--brown:#5b4332;--muted:#967b67;--line:#dbcfc3;--accent:#d9c1ab;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--brown);font-family:Inter,sans-serif;}
+body:before{content:'';position:fixed;inset:0;background:radial-gradient(circle at top left,rgba(255,255,255,.7),transparent 40%);pointer-events:none;}
+.container{display:grid;grid-template-columns:130px 1fr;max-width:1400px;margin:auto;min-height:100vh;}
+.sidebar{border-right:1px solid var(--line);padding:50px 20px;color:var(--muted);letter-spacing:.25em;font-size:.75rem;}
+.main{padding:72px 70px;}
+.hero{max-width:900px;margin-bottom:120px;}
+.kicker{text-transform:uppercase;letter-spacing:.3em;color:var(--muted);font-size:.8rem;margin-bottom:20px;}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,8vw,8rem);font-weight:400;line-height:.88;margin:0 0 24px;}
+.meta{color:var(--muted);margin:8px 0;}
+.meta a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;}
+.meta a:hover{border-color:currentColor;}
+.work-header{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;}
+.work-title{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:400;}
+.note{color:var(--muted);font-size:.9rem;}
+.work-list{border-top:1px solid var(--line);}
+.work-item{position:relative;display:grid;grid-template-columns:80px 1fr 40px;padding:26px 10px;text-decoration:none;color:var(--brown);border-bottom:1px solid var(--line);overflow:hidden;transition:transform .25s ease;}
+.work-item:before{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:linear-gradient(90deg,var(--accent),transparent);transition:width .45s ease;}
+.work-item:hover:before{width:100%;}
+.work-item:hover{transform:translateX(8px);}
+.work-item>*{position:relative;z-index:1;}
+.num,.arrow{color:var(--muted);}
+.label{font-family:'Cormorant Garamond',serif;font-size:2rem;}
+.footer{margin-top:60px;color:var(--muted);font-size:.85rem;}
+@media(max-width:768px){.container{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid var(--line)}.main{padding:32px 24px}.hero{margin-bottom:70px}.label{font-size:1.5rem}h1{font-size:4rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="sidebar">FALL<br>2026</div>
+<div class="main">
+<div class="hero">
+<div class="kicker">Portfolio</div>
+<h1>A.I. FOR DESIGNERS<br>— Liang Jing Ren</h1>
+<div class="meta">ART 3041 · Fall 2026</div>
+<div class="meta"><a href="mailto:liang.ren32@stu-mail.baruch.cuny.edu">liang.ren32@stu-mail.baruch.cuny.edu</a></div>
+</div>
+<div class="work-header">
+<div class="work-title">Work</div>
+<div class="note">07 Projects</div>
+</div>
+<div class="work-list">
+<a class="work-item" href="#"><span class="num">01</span><span class="label">Custom Instructions</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">02</span><span class="label">A Style Guide for Your AI</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">03</span><span class="label">Design a ___</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">04</span><span class="label">Commute Story</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">05</span><span class="label">Become a Crea(i)tive Director</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">06</span><span class="label">Experimental AI Interface</span><span class="arrow">↗</span></a>
+<a class="work-item" href="#"><span class="num">07</span><span class="label">Open</span><span class="arrow">↗</span></a>
+</div>
+<div class="footer">Baruch College · A.I. FOR DESIGNERS</div>
+</div>
+</div>
+</body>
+</html>
