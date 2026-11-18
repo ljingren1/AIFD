@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MATIN KIM — OFF THE CLOCK | Print Campaign</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #EAE2D3;
+  --dark: #232323;
+  --navy: #68758A;
+  --burgundy: #6E333D;
+  --stone: #9C998D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 6%;
+  border-bottom: 1px solid #aaa397;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.hero {
+  background: var(--dark);
+  color: var(--cream);
+  padding: 110px 6% 100px;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.small-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(70px, 13vw, 170px);
+  line-height: .82;
+  margin: 35px 0;
+}
+
+.hero .tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.intro {
+  max-width: 850px;
+  padding: 100px 25px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.intro h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 55px;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.section-heading {
+  padding: 40px 7%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 45px;
+  border-top: 1px solid #aaa397;
+}
+
+.ad {
+  padding: 40px 7% 110px;
+  border-bottom: 1px solid #bbb2a5;
+}
+
+.ad-number {
+  font-size: 11px;
+  color: var(--burgundy);
+  letter-spacing: 3px;
+}
+
+.ad h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(45px, 7vw, 85px);
+  margin: 20px 0 35px;
+}
+
+.ad img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  object-fit: contain;
+  background: #c6beb2;
+}
+
+.ad-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding-top: 25px;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.description {
+  max-width: 570px;
+}
+
+.product {
+  color: var(--burgundy);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.placement {
+  text-align: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.palette {
+  padding: 70px 7%;
+}
+
+.palette h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 55px;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.color {
+  height: 140px;
+  border-radius: 3px;
+}
+
+.color-name {
+  margin-top: 12px;
+  font-size: 11px;
+}
+
+.identity {
+  padding: 65px 7% 100px;
+  border-top: 1px solid #aaa397;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.identity h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.identity p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--cream);
+  padding: 90px 25px;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(55px, 10vw, 120px);
+  font-weight: 400;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.disclaimer {
+  font-size: 10px;
+  opacity: .65;
+  margin-top: 65px;
+  line-height: 1.8;
+}
+
+@media(max-width: 700px) {
+  nav {
+    padding: 18px 5%;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .nav-links a {
+    font-size: 9px;
+  }
+  .ad-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .placement {
+    text-align: left;
+  }
+  .colors {
+    gap: 5px;
+  }
+  .color {
+    height: 80px;
+  }
+  .color-name {
+    font-size: 9px;
+    overflow-wrap: anywhere;
+  }
+  .identity {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="logo">Matin Kim</div>
+
+  <div class="nav-links">
+    <a href="#campaign">CAMPAIGN</a>
+    <a href="#ads">PRINT ADS</a>
+    <a href="#identity">IDENTITY</a>
+  </div>
+</nav>
+
+<!-- CAMPAIGN HERO -->
+
+<section class="hero" id="campaign">
+  <div class="small-label">
+    MATIN KIM PRESENTS<br>
+    SPRING 2027 / NEW YORK CITY
+  </div>
+
+  <h1>OFF THE<br>CLOCK</h1>
+
+  <p class="tagline">No plans. Just presence.</p>
+
+  <div class="small-label">
+    THE NYC HEADWEAR COLLECTION
+  </div>
+</section>
+
+<!-- CAMPAIGN DESCRIPTION -->
+
+<section class="intro">
+  <div class="small-label">
+    CREATIVE DIRECTOR PT. 4
+  </div>
+
+  <h2>The City Never Stops.</h2>
+
+  <p>
+    OFF THE CLOCK is a fictional Spring 2027
+    headwear launch for Matin Kim, inspired by
+    Korean minimalist streetwear and the everyday
+    rhythm of New York City.
+  </p>
+
+  <p>
+    Through five print advertisements, the
+    campaign explores effortless personal style,
+    individuality, and the freedom to move through
+    the city at your own pace.
+  </p>
+</section>
+
+<div class="section-heading" id="ads">
+  THE PRINT CAMPAIGN / 01—05
+</div>
+
+<!-- AD 1 -->
+
+<section class="ad">
+  <div class="ad-number">01 / SOHO BILLBOARD</div>
+
+  <h2>No plans. Just presence.</h2>
+
+  <img
+    src="images/01-soho-billboard.png"
+    alt="Matin Kim After Hours cap campaign on a SoHo billboard"
+    loading="lazy">
+
+  <div class="ad-details">
+    <p class="description">
+      <span class="product">
+        AFTER HOURS — WASHED BLACK
+      </span><br>
+      A cinematic billboard featuring the washed
+      black Matin Kim cap, oversized charcoal
+      outerwear, and authentic SoHo architecture.
+      Inspired by minimalist Korean fashion
+      and vintage 35mm photography.
+    </p>
+
+    <p class="placement">
+      SOHO, MANHATTAN<br>
+      HORIZONTAL BILLBOARD / 16:9
+    </p>
+  </div>
+</section>
+
+<!-- AD 2 -->
+
+<section class="ad">
+  <div class="ad-number">02 / NYC SUBWAY</div>
+
+  <h2>Last train. First impression.</h2>
+
+  <img
+    src="images/02-subway-ad.png"
+    alt="Matin Kim Last Train burgundy cap subway advertisement"
+    loading="lazy">
+
+  <div class="ad-details">
+    <p class="description">
+      <span class="product">
+        LAST TRAIN — BURGUNDY
+      </span><br>
+      A vertical subway advertisement featuring
+      the burgundy cap against the movement
+      of New York public transportation.
+      Soft lighting and muted tones create
+      a nostalgic editorial aesthetic.
+    </p>
+
+    <p class="placement">
+      NEW YORK CITY SUBWAY<br>
+      VERTICAL POSTER / 2:3
+    </p>
+  </div>
+</section>
+
+<!-- AD 3 -->
+
+<section class="ad">
+  <div class="ad-number">
+    03 / LOWER EAST SIDE STREET POSTERS
+  </div>
+
+  <h2>Made for the in-between.</h2>
+
+  <img
+    src="images/03-wheatpaste-ad.png"
+    alt="Matin Kim Downtown Blue wheatpaste poster installation"
+    loading="lazy">
+
+  <div class="ad-details">
+    <p class="description">
+      <span class="product">
+        DOWNTOWN BLUE — FADED NAVY
+      </span><br>
+      A series of wheat-pasted fashion posters
+      displayed across a weathered brick wall.
+      The distressed textures and minimalist
+      editorial typography connect the campaign
+      with downtown NYC street culture.
+    </p>
+
+    <p class="placement">
+      LOWER EAST SIDE, MANHATTAN<br>
+      WHEATPASTE POSTER INSTALLATION
+    </p>
+  </div>
+</section>
+
+<!-- AD 4 -->
+
+<section class="ad">
+  <div class="ad-number">
+    04 / BROOKLYN BUS SHELTER
+  </div>
+
+  <h2>Take your time.</h2>
+
+  <img
+    src="images/04-bus-shelter.png"
+    alt="Matin Kim Slow Morning beige cap bus shelter campaign"
+    loading="lazy">
+
+  <div class="ad-details">
+    <p class="description">
+      <span class="product">
+        SLOW MORNING — VINTAGE BEIGE
+      </span><br>
+      An everyday coffee-run moment captured
+      through relaxed styling and soft natural
+      lighting. The advertisement celebrates
+      quiet, unplanned moments in the city.
+    </p>
+
+    <p class="placement">
+      BROOKLYN, NEW YORK<br>
+      VERTICAL BUS SHELTER AD
+    </p>
+  </div>
+</section>
+
+<!-- AD 5 -->
+
+<section class="ad">
+  <div class="ad-number">
+    05 / FASHION MAGAZINE EDITORIAL
+  </div>
+
+  <h2>Your day. Your pace.</h2>
+
+  <img
+    src="images/05-magazine-ad.png"
+    alt="Matin Kim Off The Clock complete headwear collection magazine advertisement"
+    loading="lazy">
+
+  <div class="ad-details">
+    <p class="description">
+      <span class="product">
+        THE COMPLETE COLLECTION
+      </span><br>
+      A double-page fashion editorial presenting
+      the four cap colorways through portrait
+      photography, elegant serif typography,
+      and a restrained cream-and-charcoal
+      color palette.
+    </p>
+
+    <p class="placement">
+      NYC FASHION MAGAZINE<br>
+      DOUBLE-PAGE EDITORIAL SPREAD
+    </p>
+  </div>
+</section>
+
+<!-- COLOR PALETTE -->
+
+<section class="palette" id="identity">
+  <div class="small-label">VISUAL IDENTITY</div>
+
+  <h2>Our Colors.</h2>
+
+  <div class="colors">
+
+    <div>
+      <div class="color" style="background:#232323;"></div>
+      <div class="color-name">CHARCOAL<br>#232323</div>
+    </div>
+
+    <div>
+      <div class="color" style="background:#EAE2D3;border:1px solid #B8AFA2;"></div>
+      <div class="color-name">CREAM<br>#EAE2D3</div>
+    </div>
+
+    <div>
+      <div class="color" style="background:#68758A;"></div>
+      <div class="color-name">FADED NAVY<br>#68758A</div>
+    </div>
+
+    <div>
+      <div class="color" style="background:#6E333D;"></div>
+      <div class="color-name">BURGUNDY<br>#6E333D</div>
+    </div>
+
+    <div>
+      <div class="color" style="background:#9C998D;"></div>
+      <div class="color-name">STONE<br>#9C998D</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STYLE GUIDE -->
+
+<section class="identity">
+
+  <div>
+    <div class="small-label">CAMPAIGN TYPE SYSTEM</div>
+    <h2>Typography.</h2>
+
+    <p>
+      <strong>Cormorant Garamond</strong><br>
+      Editorial headlines, campaign slogans,
+      and expressive typography.
+    </p>
+
+    <p>
+      <strong>Inter</strong><br>
+      Product descriptions, navigation,
+      campaign dates, and supporting information.
+    </p>
+  </div>
+
+  <div>
+    <div class="small-label">ART DIRECTION</div>
+    <h2>Creative Vision.</h2>
+
+    <p>
+      Minimal Korean streetwear meets
+      downtown New York City.
+      The imagery combines washed fabrics,
+      oversized styling, candid portraits,
+      film-inspired grain, natural lighting,
+      and everyday urban environments.
+    </p>
+
+    <p>
+      The campaign emphasizes authenticity,
+      individuality, and effortless fashion.
+    </p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="small-label">
+    MATIN KIM / SPRING 2027 / NEW YORK CITY
+  </div>
+
+  <h2>OFF THE CLOCK</h2>
+
+  <p>No plans. Just presence.</p>
+
+  <p class="disclaimer">
+    Creative Director Pt. 4: Print Ads<br>
+    Unofficial student-created campaign concept.<br>
+    Not affiliated with or endorsed by Matin Kim.
+  </p>
+
+</footer>
+
+</body>
+</html>
